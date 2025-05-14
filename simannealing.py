@@ -50,3 +50,21 @@ if __name__ == "__main__":
     print("Starting simulated annealing")
     solution, cost = simulated_annealing(max_iter=200)
     print("\nFinal solution: x = %g, cost = %g" % (solution, cost))
+
+"""
+Let:
+
+max_iter = number of iterations (e.g., 200)
+
+ Time Complexity:
+Each iteration does constant-time work: sampling a neighbour, evaluating cost, updating solution
+
+So, total cost over max_iter iterations:
+
+Time Complexity: O(max_iter)
+
+ Space Complexity:
+Stores a few floats (current, best, etc.)
+
+Space Complexity: O(1)
+"""

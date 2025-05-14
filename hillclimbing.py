@@ -64,3 +64,21 @@ if __name__ == "__main__":
     # Print the shortest route found and its distance
     print(best_route)
     print(best_dist)
+
+"""
+Let n = number of cities
+
+ Time Complexity:
+Outer loop (max max_attempts): O(max_attempts)
+
+Inner nested loop (all city pairs): O(n^2)
+
+For each pair swap, route_distance() takes O(n)
+
+Overall Time Complexity: O(max_attempts × n^3)
+
+ Space Complexity:
+current_route, new_route, city coordinates: O(n)
+
+Overall Space Complexity: O(n)
+"""

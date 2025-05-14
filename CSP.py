@@ -44,3 +44,17 @@ if __name__ == "__main__":
         latin_square = generate_latin_square(n)
         print("\nLatin Square " + str(n) + " x " + str(n) + ":")
         print_matrix(latin_square)
+
+"""
+Let n be the size of the Latin square.
+
+ Time Complexity: O(n²)
+Initialisation of matrix: O(n²)
+
+First row fill: O(n)
+
+Remaining rows (shifting pattern): O(n²)
+
+ Space Complexity: O(n²)
+The matrix is a 2D list of size n x n → uses O(n²) space.
+"""

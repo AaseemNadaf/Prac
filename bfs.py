@@ -30,3 +30,16 @@ if __name__ == "__main__":
     for start in [2, 0]:
         print("\nBFS starting from vertex " + str(start) + ":")
         print(" -> ".join(map(str, bfs(graph, start))))
+
+
+"""
+Time Complexity: O(V + E)
+
+Space Complexity: O(V)
+
+Where:
+
+V is the number of vertices in the graph.
+
+E is the number of edges.
+"""

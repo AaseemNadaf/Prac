@@ -41,3 +41,6 @@ def water_jug_problem():
 if __name__ == "__main__":
     print("Water Jug Problem: Measure exactly 2 liters using jugs of capacity 4 and 3 liters\n")
     water_jug_problem()
+
+# Time Complexity: O(1)
+#Space Complexity: O(1)
