@@ -1,0 +1,12 @@
+Algorithm Steps-1:- 
+1. Create a 3x3 grid to represent the Tic-Tac-Toe board. 
+2. Initialize a variable to keep track of the current player (X or O). 3. Repeat the following steps until the game is over: 
+a. Display the current state of the board. 
+b. If it's the human player's turn (X), prompt them to make a move. - Validate the input to ensure it's a valid empty cell. 
+- Place an X in the chosen cell. 
+c. If it's the computer player's turn (O): 
+- Generate a random number between 0 and 8 (inclusive) to represent a cell index. - Check if the chosen cell is empty, if not, generate a new randomnumber. - Place an O in the chosen cell. 
+d. Check for a win or a draw condition: 
+- If the current player has won, display the winner and end the game. - If the board is full and no player has won, display a draw message and end the game. e. Switch the current player for the next turn (X to O or O to X). 
+4. Display the final state of the board. 
+5. Display the winner or a draw message based on the game outcome. 6. End the game. 

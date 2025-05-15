@@ -1,0 +1,22 @@
+Algorithm Steps:- 
+1. Initialize Parameters: 
+● Set the initial temperature (T) for the annealing process. 
+● Define the cooling rate (alpha), which controls how fast the temperature decreases. ● Choose the number of iterations or steps per temperature (num_steps). ● Set the initial solution as a random value within the bounds [-5, 5]. 
+2. Define the Objective Function: 
+● Define the 1-D objective function you want to optimize, in this case, f(x) =x^2. 
+3. Initialization: 
+● Initialize the current solution as the initial random value. ● Evaluate the objective function at the current solution to get the current energy(E_current). 
+● 
+4.Annealing Loop: 
+A ) Start a loop that iterates over different temperatures (T), decreasing the temperatureusing the cooling rate (alpha) in each iteration. 
+B) For each temperature iteration: 
+1. Run the following loop for num_steps: 
+● Generate a random neighbor solution by perturbing the current solution. ● This can be done by adding a random value within a certain rangetothecurrent solution. 
+● Clip the neighbor solution to ensure it stays within the bounds [-5, 5]. ● Evaluate the objective function at the neighbor solution to get the neighbor'senergy (E_neighbor).
+● Calculate the energy difference (delta_E) between E_neighbor andE_current.
+● If delta_E is negative (neighbor solution is better), accept the neighbor solution and update E_current and the current solution. 
+● If delta_E is positive (neighbor solution is worse), accept the neighbor solution with a probability of exp(-delta_E / T). This step introducesrandomness and allows the algorithm to escape local optima. 
+C) After the num_steps iterations at the current temperature, the temperature is decreasedusing the cooling rate (alpha). 
+5.Termination Condition: 
+The annealing process can terminate based on various conditions, such as a predefinednumber of temperature iterations or when the temperature becomes very low(closetozero). 
+6. Output: The final solution found by the algorithm is the optimized value of x that corresponds to the global or near-global minimum of the objective function. 

@@ -1,0 +1,10 @@
+Algorithm Steps:- 
+1. Read the input: graph (represented as an adjacency list or matrix), start node, goal node. 2. Create an empty queue data structure for BFS. 
+3. Enqueue the start node into the queue. 
+4. Create a set or array to keep track of visited nodes. 
+5. While the queue is not empty: 
+a. Dequeue a node from the front of the queue. 
+b. If the dequeued node is the goal node, terminate and return the path. c. If the dequeued node is not in the visited set: 
+- Mark the node as visited. 
+- Enqueue all unvisited neighbors of the dequeued node into the queue. - Assign the path to the neighbors to include the current dequeued node. 
+6. If the queue becomes empty and the goal node is not found, return "Goal not reachable."7. End the algorithm

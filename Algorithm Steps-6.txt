@@ -1,0 +1,11 @@
+Algorithm Steps:- 
+1. Read the input value of n, which represents the size of the matrix. 2. Create an "n x n" matrix to store the numbers. 
+3. Initialize an array of size n, called "usedNumbers", to keep track of which numbers havebeen used in each row. 
+4. Repeat the following steps for each row (i): 
+a. Initialize the usedNumbers array to all zeros. 
+b. Repeat the following steps for each column (j): 
+- Generate a random number between 1 and n that hasn't been used in the current roworcolumn. 
+- Assign the generated number to the matrix[i][j]. 
+- Mark the used number as used in the usedNumbers array. 
+5. Print the generated matrix. 
+6. End the algorithm. 

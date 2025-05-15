@@ -1,0 +1,6 @@
+Algorithm Steps:- 
+1. Initialize the capacities of the two jugs: Jug A (4 liters) and Jug B (3 liters). 2. Create a list to store the states of the jugs, representing the amount of water in eachjug. 3. Repeat the following steps until you successfully measure 2 liters of water: a. Fill Jug A to its full capacity (4 liters). 
+b. Pour water from Jug A into Jug B until Jug B is full or Jug A is empty. c. If Jug A is now empty, pour any remaining water from Jug B into Jug A. d. Jug B now contains the amount of water poured from Jug A in step b. e. Empty Jug B. 
+f. Pour the remaining water from Jug A into Jug B. 
+4. At this point, Jug B will contain exactly 2 liters of water. 
+5. Display the final state of the jugs, showing that Jug B contains 2 liters of water. 6. End the algorithm. 

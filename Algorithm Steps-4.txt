@@ -1,0 +1,13 @@
+Algorithm Steps:- 
+1. Read the input: number of cities, distance matrix between cities. 
+2. Randomly generate an initial solution, which is a permutation of the cities representingtheorder of visit. 
+3. Initialize the current solution as the initial solution. 
+4. Initialize the current distance as the total distance traveled in the initial solution. 
+5. Repeat the following steps until a stopping criterion is met (e.g., a certain number of iterations or no improvement in distance): 
+a. Select a pair of cities to swap in the current solution. 
+b. Calculate the new distance after swapping the selected cities. c. If the new distance is shorter than the current distance: 
+- Update the current solution with the swapped cities. 
+- Update the current distance. 
+d. Else, backtrack and try another pair of cities to swap. 
+6. Return the best solution found. 
+7. End the algorithm. 
